@@ -1,0 +1,127 @@
+body{
+    background-image: url(images/background-crew-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: cover;
+    font-family: 'Public Sans' , sans-serif;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-left: .5rem;
+    margin-top: 2.5rem;
+    margin-bottom: 0rem;
+}
+.logo{
+    margin: 2rem;
+}
+.navigation{
+    justify-content: space-between;
+    text-align: center;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    cursor: pointer;
+    background: hsl(0, 0%, 100% / 0.1);
+    backdrop-filter: blur(0.8rem) ;
+    width: 650px;
+    padding: 2.1875rem;
+}
+.navigation li{
+    display: inline-block;
+}
+.navigation li a{
+   position: relative;
+   margin-inline-end: 2rem;
+   color: rgb(141, 138, 138);
+   text-decoration: none;
+   font-size: .875rem;
+   margin-left: .375rem;
+}
+.navigation li a::after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -1.875rem;
+    width: 0rem;
+    height: .25rem;
+    background: rgb(255, 255, 255);
+    transition: all .5s;
+}
+.navigation li a:hover::after{
+    width: 100%;
+}
+hr{
+    z-index: 1;
+    border: 1px solid gray;
+    width: 500px;
+    margin-left: 90px;
+    margin-bottom: 0rem;
+
+}
+.info{
+    display: flex;
+    gap: .9375rem;
+    margin-left: 12.5rem;
+}
+.num{
+    font-weight: bold;
+    font-size: 1.25rem;
+    margin-inline-end: .625rem;
+    color: rgb(71, 71, 71);
+}
+.pick{
+    font-size: 1.25rem;
+    color: white;
+}
+section{
+    display: grid;
+    grid-template-rows: 6.25rem 1fr 1fr ;
+}
+.member-name{
+    width: 70%;
+    margin-left: 15%;
+}
+.post{
+    color: rgb(71, 71, 71);
+    font-size: 1.5625rem;
+    margin-top: 3.125rem;
+   
+}
+.name{
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 0rem;
+}
+.detail{
+    color: rgb(151, 150, 150);
+    margin-top: 3.125rem;
+    width: 25rem;
+}
+.opt{
+    display: grid;
+    grid-template-rows: 6.25rem 1fr 1fr ;
+    margin-left: 12.5rem;
+    margin-top: 12.5rem;
+    
+}
+ input[type=radio] {
+    appearance: none;
+    padding: .375rem;
+    background-color: gray;
+    border-radius:50%;
+ }
+ input[type=radio]:checked {
+    background-color: white;
+ }
+ .image{
+    display: grid;
+    grid-template-rows: 6.25rem 1fr 1fr ;
+ }
+ .img-crew{
+    width: 25rem;
+    margin-left: 60%;
+ }
